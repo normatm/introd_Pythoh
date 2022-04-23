@@ -13,6 +13,23 @@ def calcular_area_do_quadrado(lado):
 def calcular_area_do_triangulo(lado, comprimento):
     return lado * comprimento/2
 
+def contagem_progressiva(fim):
+    for numero in range(fim):  # repetir o bloco de zero até o fim
+        print(numero)
+
+
+def apoiar_candidato(nome, vezes):
+    for numero in range(vezes):              # repetir quantas vezes apoia o candidato
+    #contador = numero + 1
+    # print(f'{contador} - {nome}')          # exibir o nome do candidato
+
+        if numero < 10:
+            print(f'0{numero+1}, -  {nome}')
+        elif numero < 9:
+            print(f'0{numero} + 1 - {nome}')
+        else:
+            print(numero+1, '-',nome)
+
 
 # Receber função para escrever
 
@@ -58,3 +75,14 @@ if __name__ == '__main__':
     print(f'A area do triangulo e de {resultado} m²')
 
     # RESULTADO =  A área do triangulo é de 21.0 m²
+    
+    #  Chamar / Executar uma Contagem Progressiva
+    resultado = contagem_progressiva(11)
+
+    # Chamar / Executar Função = exibir o nome do candidato várias vezes
+    apoiar_candidato('Faker', 10)
+    # RESULTADO = Ele executou o nome do candidato (Faker) por 10 vezes
+
+    # Chamar / Executar Função =
+	#brincar_de_plim(10)
+    #RESULTADO=Ele executou PLIM! Por 10 vezes e escreveu Plim múltiplos de 4
