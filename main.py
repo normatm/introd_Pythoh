@@ -15,7 +15,7 @@ def calcular_area_do_triangulo(lado, comprimento):
 
 
 def contagem_progressiva(fim):
-    for numero in range(fim):  # repetir o bloco de zero até o fim
+    for numero in range(fim):  # repetir o bloco de 0 ate 9
         print(numero)
 
 
@@ -31,13 +31,13 @@ def apoiar_candidato(nome, vezes):
         else:
             print(numero+1, '-',nome)
 
+def brincar_de_plim(fim):
+    for numero in range(fim):  # brincadeira igual do Silvio Santos
+        if numero % 4 == 0:     # % não calcula percentual e sim calcula o que sobra
+            print("PLIM!")
+        else:
+            print('{:0>3}'.format(numero))
 
-#def brincar_de_plim(fim):
-	#for numero in range(fim):      # brincadeira igual do Silvio Santos
-		#if  numero % 4 == 0:      # % não calcula percentual e sim calcula o que sobra
-            #print('PLIM!')
-        #else:
-            #print('{:0>3}'.format(numero))
 
 def exibir_dia_da_semana_if(numero):
     if numero == 1:
@@ -95,35 +95,35 @@ if __name__ == '__main__':
     # () Os parênteses são variáveis que vai enviar e receber o nome.
 
     # Chamar função Area do Retângulo
-
     resultado = calcular_area_do_retangulo(3, 4)
     print(f'A area do retangulo e de {resultado} m²')
-
     # RESULTADO = A área do retângulo é de 12 m²
 
-    # Chamar função Area do Quadrado
 
+    # Chamar função Area do Quadrado
     resultado = calcular_area_do_quadrado(5)
     print(f'A area do quadrado e de {resultado} m²')
-
     # RESULTADO =  A área do quadrado é de 25 m²
+
 
     # Chamar função Area do Triangulo
     resultado = calcular_area_do_triangulo(6, 7)
     print(f'A area do triangulo e de {resultado} m²')
-
     # RESULTADO =  A área do triangulo é de 21.0 m²
+
 
     #  Chamar / Executar uma Contagem Progressiva
     resultado = contagem_progressiva(11)
+
 
     # Chamar / Executar Função = exibir o nome do candidato várias vezes
     apoiar_candidato('Faker', 10)
     # RESULTADO = Ele executou o nome do candidato (Faker) por 10 vezes
 
     # Chamar / Executar Função =
-	#brincar_de_plim(10)
-    #RESULTADO=Ele executou PLIM! Por 10 vezes e escreveu Plim múltiplos de 4
+    resultado = brincar_de_plim(10)
+    # RESULTADO=Ele executou PLIM! Por 10 vezes e escreveu Plim múltiplos de 4
+
 
     # exemplo de dia da semana com if - elif - else
     exibir_dia_da_semana_if(1)
@@ -137,11 +137,9 @@ if __name__ == '__main__':
     # RESULTADO=Ele executou os dias da semana de 1 a 7 =(seg ter qua qui sex sab dom)
     # Numero de dia invalido, Digite um numero de 1 a 7
 
-    # exemplo de dia da semana com Match - case
-    #exibir_dia_da_semana_match(1)
-    # RESULTADO=Ele não executou informa que a versão deve ser 3.10
 
     # exemplo com while - brincar de x  para ou continua
     brincar_de_para_ou_continua()
     # RESULTADO=Ele não executou informa que a versão deve ser 3.10
     #Digite C para Continuar ou qualquer outro caracter para Parar
+
