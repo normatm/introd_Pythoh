@@ -1,0 +1,32 @@
+from typing import Match
+
+
+def exibir_dia_da_semana_match(numero):
+    print("Execução com MATCH")
+    escolha = 1
+    match escolha:
+        case 1:
+            print('O dia é segunda')
+            exit()
+        case 2:
+            print('O dia é terça')
+        case 3:
+            print('O dia é quarta')
+        case 4:
+            print('O dia é quinta')
+        case 5:
+            print('O dia é sexta')
+        case 6:
+            print('O dia é sabado')
+        case 7:
+            print('O dia é domingo')
+        case: _:
+            print('Numero de dia invalido. Digite um numero de 1 a 7')
+
+
+# Estrutura de identificação / execução do script  # Abaixo exemplo de Laço condicional
+if __name__ == '__main__':
+
+    # exemplo de dia da semana com Match - case
+    exibir_dia_da_semana_match(1)
+    # RESULTADO=Ele não executou informa que a versão deve ser 3.10
